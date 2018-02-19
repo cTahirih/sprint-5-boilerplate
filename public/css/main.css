@@ -1,0 +1,11 @@
+body {
+  color: #0c0c0c;
+}
+
+input#search-foro {
+  width: 70%;
+}
+
+.s-response {
+  border: 1px solid black;
+}
