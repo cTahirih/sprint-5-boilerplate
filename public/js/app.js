@@ -23,7 +23,7 @@ $(document).ready(function() {
       });
   });
   $.ajax({
-    url: 'http://examen-laboratoria-sprint-5.herokuapp.com/topics',
+    url: 'https://examen-laboratoria-sprint-5.herokuapp.com/topics',
     method: 'GET',
     contentType: 'application/json',
     crossOrigin: true,
@@ -47,7 +47,7 @@ $(document).ready(function() {
     $('.card').empty();
     var searchForo = $('#textSearch-foro').val();
     event.preventDefault();
-    $.getJSON('http://examen-laboratoria-sprint-5.herokuapp.com/topics', function(find) {
+    $.getJSON('https://examen-laboratoria-sprint-5.herokuapp.com/topics', function(find) {
       var findFilter = find.filter(function(find) {
         return find.content.toLowerCase().indexOf(searchForo) >= 0;
       });
