@@ -12,10 +12,10 @@ $(document).ready(function() {
       url: 'http://private-anon-7df87ec8eb-foroapi.apiary-proxy.com/topics',
     })
       .done(function(msg) {
-        $('.card').prepend(`<div class="card-body m-2 rounded">
-          <p class="card-text"><i class="far fa-2x fa-envelope mr-2"></i>${msg.content}</p>
-          <a href="#" class="card-link"><i class="far fa-user-circle mr-2"></i>${msg.author_name}</a>
-          <a href="#" class="card-link" id="response-post"><i class="far fa-comment-alt mr-2"></i>${msg.responses_count}</a>
+        $('.card').prepend(`<div class="card-body">
+          <p class="card-text">${msg.content}</p>
+          <a href="#" class="card-link">${msg.author_name}</a>
+          <a href="#" class="card-link" id="response-post">${msg.responses_count}</a>
           <div id="container-response">
             <!-- contiene respuestas -->
           </div>
@@ -30,10 +30,10 @@ $(document).ready(function() {
     success: function(response) {
       console.log(response);
       $.each(response, function(i, data) {
-        let listForum = `<div class="card-body m-2 rounded">
-          <p class="card-text"><i class="far fa-2x fa-envelope mr-2"></i>${data.content}</p>
-          <a href="#" class="card-link"><i class="far fa-user-circle mr-2"></i>${data.author_name}</a>
-          <a href="#" class="card-link" id="response-post"><i class="far fa-comment-alt mr-2"></i>${data.responses_count}</a>
+        let listForum = `<div class="card-body">
+          <p class="card-text">${data.content}</p>
+          <a href="#" class="card-link">${data.author_name}</a>
+          <a href="#" class="card-link" id="response-post">${data.responses_count}</a>
           <div id="container-response">
             <!-- contiene respuestas -->
           </div>
@@ -53,10 +53,10 @@ $(document).ready(function() {
       });
       console.log(findFilter);
       $.each(findFilter, function(i, data) {
-        let themeFind = `<div class="card-body m-2 rounded">
-          <p class="card-text"><i class="far fa-2x fa-envelope mr-2"></i>${data.content}</p>
-          <a href="#" class="card-link"><i class="far fa-user-circle mr-2"></i>${data.author_name}</a>
-          <a href="#" class="card-link" id="response-post"><i class="far fa-comment-alt mr-2"></i>${data.responses_count}</a>
+        let themeFind = `<div class="card-body">
+          <p class="card-text">${data.content}</p>
+          <a href="#" class="card-link">${data.author_name}</a>
+          <a href="#" class="card-link" id="response-post">${data.responses_count}</a>
           <div id="container-response">
             <!-- contiene respuestas -->
           </div>
