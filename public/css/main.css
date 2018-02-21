@@ -1,5 +1,5 @@
 body {
-  color: #0c0c0c;
+  color: #614B49;
 }
 
 input#search-foro {
@@ -9,3 +9,22 @@ input#search-foro {
 .s-response {
   border: 1px solid black;
 }
+
+.card-body.m-2.rounded {
+  border: 2px solid #F1BABF;
+};
+}
+
+.jumbotron.mt-2 {
+  background-color: #F0EFEE;
+}
+
+.card {
+  background-color: inherit;
+  border: none;
+}
+
+nav.navbar.navbar-expand-lg.navbar-light.bg-light {
+  background-color: #F1BABF!important;
+}
+
